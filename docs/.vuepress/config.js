@@ -9,8 +9,6 @@ module.exports = {
             // 作为特例，默认语言可以使用 '/' 作为其路径。
             '/': {
                 lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-                title: 'VuePress',
-                description: 'Vue-powered Static Site Generator'
             }
         },
         sidebar: [{
@@ -50,7 +48,8 @@ module.exports = {
                     'other/rem',
                     'other/weixinDebug',
                 ]
-            }
+            },
+            'aboutMe/',
         ]
     }
 };
