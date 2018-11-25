@@ -3,6 +3,9 @@ module.exports = {
     title: 'andy chen的博客',
     description: 'andy chen的博客',
     themeConfig: {
+        nav: [
+            { text: '代码片段', link: 'https://chen4342024.github.io/code-snippet/' },
+        ],
         lastUpdated: '上次更新', // string | boolean
         locales: {
             // 键名是该语言所属的子路径
