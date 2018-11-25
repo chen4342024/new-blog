@@ -1,15 +1,14 @@
-# 项目介绍
-
-个人博客
-
 ---
-
-### 关于作者：
-
-AndyChen，前端开发，Hybrid App
-
-联系方式 ：374664805@qq.com
-
-博客：https://chen4342024.github.io/new-blog/
-
-本文为原创文章，因此转载请保留原出处
+home: true
+heroImage: /logo.jpeg
+actionText: 进入博客
+actionLink: /js/promise
+# features:
+#     - title: js
+#       details: 一系列关于js语言的文章。
+#     - title: css
+#       details: 一系列关于css语言的文章。
+#     - title: 其他
+#       details: 一系列关于开发，第三方软件的文章。
+footer: MIT Licensed | Copyright © 2018-present Andy Chen
+---
