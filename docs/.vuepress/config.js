@@ -47,6 +47,7 @@ module.exports = {
                     'other/git',
                     'other/rem',
                     'other/weixinDebug',
+                    'other/highQualityCode',
                 ]
             },
             'aboutMe/',
