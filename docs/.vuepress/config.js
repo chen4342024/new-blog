@@ -16,6 +16,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                     'js/promise',
+                    'js/compressImage',
                 ]
             },
             {
