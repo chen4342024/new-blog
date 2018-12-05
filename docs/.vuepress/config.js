@@ -17,6 +17,7 @@ module.exports = {
                 children: [
                     'js/promise',
                     'js/compressImage',
+                    'js/task',
                 ]
             },
             {
@@ -49,6 +50,8 @@ module.exports = {
                     'other/rem',
                     'other/weixinDebug',
                     'other/highQualityCode',
+                    'other/cache',
+                    'other/http',
                 ]
             },
             'aboutMe/',

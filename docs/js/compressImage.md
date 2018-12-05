@@ -164,13 +164,6 @@ export function convertImage(
     while (dataUrl.length > maxSize && count < 10) {
         let imgDataLength = dataUrl.length;
         let isDoubleSize = imgDataLength / maxSize > 2;
-        // 图片还太大的情况下，继续压缩 。 按比例缩放尺寸
-        let scaleStrength = COMPRESS_SIZE_RATE;
-        console.log(
-            `imgDataLength---> ${imgDataLength} , maxSize --> ${maxSize} , scaleStrength -> ${scaleStrength} , quality ---> ${quality}`
-        );
-        h = cvs.height * scaleStrength;
-        w = cvs.width * scaleStrength;
 
         // 质量一次下降
         quality -= isDoubleSize
@@ -178,17 +171,25 @@ export function convertImage(
             : COMPRESS_QUALITY_STEP;
         quality = parseFloat(quality.toFixed(2));
 
+        // 图片还太大的情况下，继续压缩 。 按比例缩放尺寸
+        let scaleStrength = COMPRESS_SIZE_RATE;
+        w = w * scaleStrength;
+        h = h * scaleStrength;
+
         size = prepareCanvas(cvs, ctx, w, h, orientation);
+
         //将图片绘制到Canvas上，从原点0,0绘制到w,h
         ctx.drawImage(image, 0, 0, size.w, size.h);
+
+        console.log(`imgDataLength：${imgDataLength} , maxSize --> ${maxSize}`);
+        console.log(`size.w:${size.w}, size.h:${size.h}, quality：${quality}`);
         dataUrl = cvs.toDataURL(`image/jpeg`, quality);
         count++;
     }
-    console.log(
-        `imgDataLength---> ${
-            dataUrl.length
-        } , maxSize --> ${maxSize},quality ---> ${quality}`
-    );
+
+    console.log(`imgDataLength：${dataUrl.length} , maxSize --> ${maxSize}`);
+    console.log(`size.w:${size.w}, size.h:${size.h}, quality：${quality}`);
+
     cvs = ctx = null;
     return dataUrl;
 }
@@ -207,22 +208,23 @@ function prepareCanvas(cvs, ctx, w, h, orientation) {
     //判断图片方向，重置canvas大小，确定旋转角度，iphone默认的是home键在右方的横屏拍摄方式
     let degree = 0;
     switch (orientation) {
-        //iphone横屏拍摄，此时home键在左侧
         case 3:
+            //iphone横屏拍摄，此时home键在左侧
             degree = 180;
             w = -w;
             h = -h;
             break;
-        //iphone竖屏拍摄，此时home键在下方(正常拿手机的方向)
+
         case 6:
+            //iphone竖屏拍摄，此时home键在下方(正常拿手机的方向)
             cvs.width = h;
             cvs.height = w;
             degree = 90;
             // w = w;
             h = -h;
             break;
-        //iphone竖屏拍摄，此时home键在上方
         case 8:
+            //iphone竖屏拍摄，此时home键在上方
             cvs.width = h;
             cvs.height = w;
             degree = 270;
@@ -230,6 +232,9 @@ function prepareCanvas(cvs, ctx, w, h, orientation) {
             // h = h;
             break;
     }
+
+    // console.log(`orientation --> ${orientation} , degree --> ${degree}`);
+    // console.log(`w --> ${w} , h --> ${h}`);
     //使用canvas旋转校正
     ctx.rotate((degree * Math.PI) / 180);
     return { w, h };
