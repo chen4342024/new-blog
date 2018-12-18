@@ -168,7 +168,7 @@ export function insertSort(array) {
 -   时间复杂度：平均 O(n^2) 、 最坏 O(n^2) 、最好 O(n)
 -   额外空间复杂度 O(1)
 
-## 效果演示
+## 效果演示（汇总）
 
 <iframe src="http://global.chen4342024.com/algorithm/?key=all" frameborder="0" class="preview-page" style="border:1px solid #ccc;margin-top:30px;" width="375px" height="667px"></iframe>
 
