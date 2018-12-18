@@ -65,6 +65,10 @@ export function bubbleSort(array) {
 }
 ```
 
+#### 效果演示
+
+<iframe src="http://global.chen4342024.com/algorithm/?key=bubble" frameborder="0" class="preview-page" style="border:1px solid #ccc;margin-top:30px;" width="375px" height="667px"></iframe>
+
 #### 小结
 
 冒泡算法是比较慢的排序之一，也是最容易实现的算法之一。
@@ -112,6 +116,10 @@ export function selectSort(array) {
 }
 ```
 
+#### 效果演示
+
+<iframe src="http://global.chen4342024.com/algorithm/?key=select" frameborder="0" class="preview-page" style="border:1px solid #ccc;margin-top:30px;" width="375px" height="667px"></iframe>
+
 ##### 复杂度
 
 -   稳定性：不稳定
@@ -150,11 +158,19 @@ export function insertSort(array) {
 }
 ```
 
+#### 效果演示
+
+<iframe src="http://global.chen4342024.com/algorithm/?key=insert" frameborder="0" class="preview-page" style="border:1px solid #ccc;margin-top:30px;" width="375px" height="667px"></iframe>
+
 ##### 复杂度
 
 -   稳定性：稳定
 -   时间复杂度：平均 O(n^2) 、 最坏 O(n^2) 、最好 O(n)
 -   额外空间复杂度 O(1)
+
+## 效果演示
+
+<iframe src="http://global.chen4342024.com/algorithm/?key=all" frameborder="0" class="preview-page" style="border:1px solid #ccc;margin-top:30px;" width="375px" height="667px"></iframe>
 
 ## 总结
 
