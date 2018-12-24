@@ -2,22 +2,21 @@ module.exports = {
     base: '/new-blog/',
     title: 'andy chen 的博客',
     description: '每天进步一点点',
+    plugins: [
+        ['@vuepress/google-analytics', { ga: 'UA-131310893-1' }]
+    ],
     themeConfig: {
-        nav: [
-            {
-                text: '更多',
-                items: [
-                    {
-                        text: '代码片段收集',
-                        link: 'https://chen4342024.github.io/code-snippet/'
-                    },
-                    { text: 'GitHub', link: 'https://github.com/chen4342024' }
-                ]
-            }
-        ],
+        nav: [{
+            text: '更多',
+            items: [{
+                    text: '代码片段收集',
+                    link: 'https://chen4342024.github.io/code-snippet/'
+                },
+                { text: 'GitHub', link: 'https://github.com/chen4342024' }
+            ]
+        }],
         lastUpdated: '上次更新', // string | boolean
-        sidebar: [
-            {
+        sidebar: [{
                 title: 'JS 相关',
                 collapsable: false,
                 children: ['js/promise', 'js/compressImage', 'js/task']
