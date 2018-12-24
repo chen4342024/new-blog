@@ -2,9 +2,7 @@ module.exports = {
     base: '/new-blog/',
     title: 'andy chen 的博客',
     description: '每天进步一点点',
-    plugins: [
-        ['@vuepress/google-analytics', { ga: 'UA-131310893-1' }]
-    ],
+    ga: 'UA-131310893-1',
     themeConfig: {
         nav: [{
             text: '更多',
