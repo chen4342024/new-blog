@@ -39,6 +39,20 @@ module.exports = {
                 children: ['js/underscore/restArgs', 'js/underscore/tip']
             },
             {
+                title: 'snabbdom源码解析',
+                collapsable: false,
+                children: [
+                    'js/vue/snabbdom/snabbdom.md',
+                    'js/vue/snabbdom/h.md',
+                    'js/vue/snabbdom/patch.md',
+                    'js/vue/snabbdom/hooks.md',
+                    'js/vue/snabbdom/modules.md',
+                    'js/vue/snabbdom/vnode.md',
+                    'js/vue/snabbdom/util.md',
+                    'js/vue/snabbdom/event.md',
+                ]
+            },
+            {
                 title: '算法',
                 collapsable: false,
                 children: ['js/algorithm/baseSort']
