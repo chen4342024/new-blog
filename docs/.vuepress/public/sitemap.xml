@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://chen4342024.github.io/new-blog/</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/promise.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/compressImage.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/task.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/advanced.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/bestPractice.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/canvas.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/context.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/env.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/event.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/oop.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/js-book/referenceType.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/underscore/restArgs.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/underscore/tip.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/prepare.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/h.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/vnode.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/patch.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/hooks.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/modules.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/event.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/vue/snabbdom/util.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/js/algorithm/baseSort.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/git.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/rem.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/weixinDebug.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/highQualityCode.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/cache.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/other/http.html</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chen4342024.github.io/new-blog/aboutMe/</loc>
+  <lastmod>2018-12-26T09:30:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
