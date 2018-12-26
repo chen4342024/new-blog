@@ -1,4 +1,4 @@
-# vnode
+# vnode 对象
 
 `vnode` 是一个对象，用来表示相应的 dom 结构
 

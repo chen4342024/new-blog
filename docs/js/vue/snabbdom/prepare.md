@@ -92,4 +92,4 @@ export default snabbdomBundle;
 1. `patch`函数 ， 由 `snabbdom.ts` 的 `init` 方法，根据传入的 `module` 来初始化
 2. `h`函数 ，在 `h.ts` 里面实现。
 
-看起来 `h`函数比 `patch` 要简单一些，我们去看看到底做了些什么。
+看起来 `h`函数比 `patch` 要简单一些，我们去看看到底做了些什么。prepare

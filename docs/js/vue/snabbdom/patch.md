@@ -67,7 +67,7 @@ const hooks: (keyof Module)[] = [
 
 :::
 
-### sameVnode
+### sameVnode 
 
 判断是否是相同的虚拟节点
 
@@ -146,7 +146,7 @@ function sameVnode(vnode1: VNode, vnode2: VNode): boolean {
 
 整体的流程大体上是这样子，接下来我们来关注更多的细节！
 
-## patchVnode
+## patchVnode 方法
 
 首先我们研究 `patchVnode` 了解相同节点是如何更新的
 
@@ -240,6 +240,16 @@ patchVnode 方法主要的逻辑如下 ：
         }
     }
 ```
+
+:::tip
+一开始，看到这种写法总有点不习惯，不过后面看着就习惯了。
+
+`if (isDef((i = data.hook)) && isDef((i = i.init))) {i(vnode);}`
+
+约等于
+
+`if(data.hook.init){data.hook.init(vnode)}`
+:::
 
 ## updateChildren 方法
 
@@ -409,7 +419,7 @@ patchVnode 方法主要的逻辑如下 ：
 
 ```
 
-## addVnodes
+## addVnodes 方法
 
 `addVnodes` 就比较简单了，主要功能就是添加 `Vnodes` 到 真实 DOM 中
 
@@ -438,7 +448,7 @@ function addVnodes(
 }
 ```
 
-## removeVnodes
+## removeVnodes 方法
 
 删除 VNodes 的主要逻辑如下：
 
@@ -502,7 +512,7 @@ function removeVnodes(
 
 ```
 
-## createElm
+## createElm 方法
 
 将 vnode 转换成真正的 DOM 元素
 
@@ -602,6 +612,6 @@ function createElm(vnode: VNode, insertedVnodeQueue: VNodeQueue): Node {
 
 ## 其他
 
-想了解在各个生命周期都有哪些钩子，请查看：[模块](/js/vue/snabbdom/modules.md)
+想了解在各个生命周期都有哪些钩子，请查看：[钩子](/js/vue/snabbdom/hooks.md)
 
 想了解在各个生命周期里面如何更新具体的模块请查看：[模块](/js/vue/snabbdom/modules.md)

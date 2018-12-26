@@ -84,3 +84,9 @@ export default h;
 ## 其他
 
 h 函数比较简单，主要是提供一个方便的工具函数，方便创建 vnode 对象
+
+:::tip
+
+详细了解 vnode 对象 ，请查看 [vnode](/js/vue/snabbdom/vnode.md)
+
+:::
