@@ -5,9 +5,11 @@ actionText: 进入博客
 actionLink: /js/promise
 meta:
     - name: google-site-verification
+      content: PrUrYkjG0xfrEWLpR4jriOTYnkOAbvxWdeazp79v4Ts
+    - name: google-site-verification
       content: UAsuHnyAb-TEPVLJBQT7gMxsZusN1ieGnrs-O0-NObM
     - name: baidu-site-verification
-      content: 7qmGncqAUc
+      content: 4TOJqlaqvJ
 # features:
 #     - title: js
 #       details: 一系列关于js语言的文章。
