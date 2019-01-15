@@ -54,6 +54,20 @@ module.exports = {
                 ]
             },
             {
+                title: 'vue-router源码解析',
+                collapsable: false,
+                children: [
+                    'js/vue/vue-router/prepare.md',
+                    'js/vue/vue-router/plugin.md',
+                    'js/vue/vue-router/mode.md',
+                    'js/vue/vue-router/navEvent.md',
+                    'js/vue/vue-router/match.md',
+                    'js/vue/vue-router/component.md',
+                    'js/vue/vue-router/scroll.md',
+                    'js/vue/vue-router/async.md',
+                ]
+            },
+            {
                 title: '算法',
                 collapsable: false,
                 children: ['js/algorithm/baseSort']
