@@ -57,12 +57,9 @@ MyPlugin.install = function (Vue, options) {
 首先查看入口文件 `src/index.js`
 
 ```javascript
-import { install } from './install'
-
-...
-
+import { install } from './install';
+// ...more
 VueRouter.install = install;
-
 ```
 
 所以，具体的实现在 `install`里面。接下来我们来看具体做了些什么 ？
@@ -72,6 +69,8 @@ VueRouter.install = install;
 install 相对来说逻辑较为简单。主要做了以下几个部分 ：
 
 ### 防止重复安装
+
+通过一个全局变量来确保只安装一次
 
 ```javascript
 // 插件安装方法
@@ -126,6 +125,7 @@ export function install(Vue) {
             registerInstance(this, this);
         },
         destroyed() {
+            // 销毁实例
             registerInstance(this);
         }
     });
@@ -134,9 +134,21 @@ export function install(Vue) {
 }
 ```
 
+我们看到 ， 利用`mixin`，我们往实例增加了 `beforeCreate` 以及 `destroyed` 。在里面注册以及销毁实例。
+
+值得注意的是 `registerInstance` 函数里的
+
+```javascript
+vm.$options._parentVnode.data.registerRouteInstance;
+```
+
+你可能会疑惑 ， 它是从哪里来的 。
+
+它是在 `./src/components/view.js` , `route-view` 组件的 render 方法里面定义的。主要用于注册及销毁实例，具体的我们后期再讲~
+
 ### 挂载变量到原型上
 
-通过以下形式，定义变量。我们经常使用到的 `this.$router ，this.$route` 就是在这里定义的
+通过以下形式，定义变量。我们经常使用到的 `this.$router ，this.$route` 就是在这里定义的。
 
 ```javascript
 // 挂载变量到原型上
@@ -153,6 +165,11 @@ Object.defineProperty(Vue.prototype, '$route', {
     }
 });
 ```
+
+:::tip 提示
+这里通过 `Object.defineProperty` 定义 `get` 来实现 ， 而不使用 `Vue.prototype.$router = this.this._routerRoot._router`。
+是为了让其只读，不可修改
+:::
 
 ### 注册全局组件
 
@@ -246,6 +263,7 @@ export function install(Vue) {
     Vue.component('RouterView', View);
     Vue.component('RouterLink', Link);
 
+    // 定义合并的策略
     const strats = Vue.config.optionMergeStrategies;
     // use the same hook merging strategy for route hooks
     strats.beforeRouteEnter = strats.beforeRouteLeave = strats.beforeRouteUpdate =

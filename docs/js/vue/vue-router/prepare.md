@@ -4,6 +4,10 @@
 
 这里主要通过阅读 `vue-router` 的源码，对平时使用较多的一些特性以及功能，理解其背后实现的思路。
 
+:::tip
+阅读版本 ： `3.0.2`
+:::
+
 ## 目录结构
 
 ```javascript
@@ -70,9 +74,9 @@ const app = new Vue({
 到这里相信你对整个项目结构有一个大概的认识 。 接下来，我们会根据以下几点，一步步拆解 `vue-router`。
 
 -   [vue 插件方式的实现](/js/vue/vue-router/plugin.md)
--   [路由模式及降级处理的实现](js/vue/vue-router/mode.md)
--   [导航守卫的原理](js/vue/vue-router/navEvent.md)
--   [路由匹配详解](js/vue/vue-router/match.md)
--   [组件：route-view 和 route-link 都做了些什么 ？](js/vue/vue-router/component.md)
--   [滚动行为的实现](js/vue/vue-router/scroll.md)
--   [如何实现异步加载组件（路由懒加载）](js/vue/vue-router/async.md)
+-   [路由模式及降级处理的实现](/js/vue/vue-router/mode.md)
+-   [导航守卫的原理](/js/vue/vue-router/navEvent.md)
+-   [路由匹配详解](/js/vue/vue-router/match.md)
+-   [组件：route-view 和 route-link 都做了些什么 ？](/js/vue/vue-router/component.md)
+-   [滚动行为的实现](/js/vue/vue-router/scroll.md)
+-   [如何实现异步加载组件（路由懒加载）](/js/vue/vue-router/async.md)
