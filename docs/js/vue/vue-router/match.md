@@ -370,7 +370,7 @@ let reg = Regexp('/about', [], {}); // reg ==>  /^\/about(?:\/(?=$))?$/i
 '/home'.match(reg); // null
 
 // 假如我们页面 path 为 /about/:id
-let reg = Regexp('/about', [], {}); // reg ==>  /^\/about\/((?:[^\/]+?))(?:\/(?=$))?$/i
+let reg = Regexp('/about/:id', [], {}); // reg ==>  /^\/about\/((?:[^\/]+?))(?:\/(?=$))?$/i
 '/about'.match(reg); //  null
 '/about/123'.match(reg); //["/about/123", "123", index: 0, input: "/about/123", groups: undefined]
 ```
